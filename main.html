@@ -6,27 +6,12 @@
 
 <body onload="startTime()">
 
-<div class="clock-div">
 <div id="txt" class="clock"></div>
-</div>
 
-<script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-  setTimeout(startTime, 1000);
-}
+<button onclick="openFullscreen()" class="expand-button"><img src="expand.png" class="expand"></button>
+<!--img source: https://www.flaticon.com/free-icon/expand_439171?term=fullscreen&page=1&position=6&origin=tag&related_id=439171-->
 
-function checkTime(i) {	
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
+<script src="myscript.js"></script>
 
 </body>
 </html>
