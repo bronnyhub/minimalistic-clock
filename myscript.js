@@ -2,6 +2,7 @@ var elem = document.documentElement;
 function openFullscreen() {
   if(elem.requestFullscreen) {
     elem.requestFullscreen();
+    document.getElementById("expand").style.opacity = "0";
   } else if (elem.webkitRequestFullscreen) { /* Safari */
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) { /* IE11 */
