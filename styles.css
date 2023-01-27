@@ -13,10 +13,16 @@ body {
     color:aliceblue;
 }
 
-.expand-button {
+.bttn-expand {
     background-color: #0d0d0d;    
     border:none;
     float:right;
+}
+
+.bttn-menu {
+    background-color: #0d0d0d;    
+    border:none;
+    float:left;
 }
 
 .expand {
