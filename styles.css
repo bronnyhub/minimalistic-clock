@@ -1,6 +1,7 @@
 body {
     background-color: #0d0d0d ;
     font-size: 120px;
+    margin: 0;
 }
 
 .clock {
@@ -17,16 +18,19 @@ body {
     background-color: #0d0d0d;    
     border:none;
     float:right;
+    display:flex;
+    margin-top:15px;
 }
 
 .bttn-menu {
     background-color: #0d0d0d;    
     border:none;
     float:left;
+    display:flex;
+    margin-top:15px;
 }
 
 .expand {
     height:50px;
     margin:5px;
 }
-
