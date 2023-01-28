@@ -3,6 +3,7 @@ function openFullscreen() {
   if(elem.requestFullscreen) {
     elem.requestFullscreen();
     document.getElementById("expand").style.opacity = "0";
+    document.getElementById("side-nav").style.opacity = "0";
     document.getElementById("menu").style.opacity = "0";
   } else if (elem.webkitRequestFullscreen) { /* Safari */
     elem.webkitRequestFullscreen();
@@ -15,6 +16,7 @@ document.addEventListener("keydown", function(event) {
   const key = event.key; // Or const {key} = event; in ES6+
   if (key === "Escape") {
     document.getElementById("expand").style.opacity = "1";
+    document.getElementById("side-nav").style.opacity = "1  ";
     document.getElementById("menu").style.opacity = "1";
   }
 });
@@ -22,7 +24,6 @@ document.addEventListener("keydown", function(event) {
 function closeFullscreen() {
   if(document.exitFullscreen) {
     document.exitFullscreen();
-    alert("Press ESC again for icons to show.");
   } else if (document.webkitExitFullscreen) { /* Safari */
     document.webkitExitFullscreen();
   } else if (document.msExitFullscreen) { /* IE11 */
@@ -46,3 +47,8 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
+
+$(".sidebar ul li").on('click' , function() {
+  $(".sidebar ul li.active").removeClass('active');
+  $(this).addClass('active');
+}) 
