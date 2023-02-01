@@ -6,3 +6,6 @@ I found it difficult to focus when there's so much going on on the screen. I dec
 ## used
 ![alt Bootstrap](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.pn =20x20)
 ![alt jQuery](https://cdn.worldvectorlogo.com/logos/jquery-4.svg | height=20)
+
+
+<img src='https://cdn.worldvectorlogo.com/logos/jquery-4.svg' height=20px;>
