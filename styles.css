@@ -15,7 +15,7 @@ body {
 }
 
 .bttn-expand {
-    background-color: #0d0d0d;    
+    background-color: transparent;    
     border:none;
     float:right;
     display:flex;
@@ -23,7 +23,7 @@ body {
 }
 
 .bttn-menu {
-    background-color: #0d0d0d;    
+    background-color: transparent;    
     border:none;
     float:left;
     display:flex;
@@ -43,7 +43,7 @@ body {
 }
 
 #side-nav{
-    background-color: #0d0d0d;
+    background-color: transparent;
     min-width: 250px;
     max-width: 250px;
     transition: all 0.2s;
@@ -65,6 +65,36 @@ li {
 .sidebar li a {
     color: white;
 }
+
+.nonshower {
+    display:flex;
+}
+
+.menu-picker{
+    display:none;
+    background-color:transparent;
+    align-items: center;
+    height:90px;
+    width:250px;
+    justify-content:center;
+    border-radius: 10%;
+    margin:10px;
+}
+
+
+.color-picker {
+    height:50px;
+}
+
+.button-set-color{
+    height:50px;
+}
+
+.color-button-text {
+    font-size: 30px;
+    text-align: center;
+}
+
 
 @media(max-width: 767px){
     #side-nav {

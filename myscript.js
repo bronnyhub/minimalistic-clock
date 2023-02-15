@@ -52,3 +52,12 @@ $(".sidebar ul li").on('click' , function() {
   $(".sidebar ul li.active").removeClass('active');
   $(this).addClass('active');
 }) 
+
+$('#backgroundPicker').click(function(){
+  $('#background-picker-menu').toggle();
+});
+
+function changeBackground(){
+  let color = document.getElementById('color_value').value;
+  document.body.style.backgroundColor = color;
+}
