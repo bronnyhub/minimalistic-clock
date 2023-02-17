@@ -17,7 +17,7 @@
             </div>
          <ul class="list-unstyled px-2">            
             <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block" id="backgroundPicker"><i class="fa-solid fa-image"></i> Background</a> </li>
-            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-font"></i> Clock font</a> </li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block" id="fontPicker"><i class="fa-solid fa-font"></i> Clock font</a> </li>
             <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-address-book"></i> Contact</a> </li>
          </ul>
          </div>
@@ -31,8 +31,6 @@
 
     </div>
 
-
-
     <div class="nonshower">
     <div class="menu-picker" id="background-picker-menu">   
         <input type="color" class="color-picker" id="color_value" name="color_value" value="Black">
@@ -41,6 +39,18 @@
         </button>
     </div>
     </div>  
+
+    <div class="font-picker" id="font-picker-menu">
+        <input list="browsers" name="browser" class="font-browser" id="font-browser">
+         <datalist id="fonts">
+             <option value="Times new roman">
+             <option value="Montserrat">
+             <option value="Oswald">
+             <option value="Indie flower">
+             <option value="Nanum Myeongjo">
+         </datalist>
+        <input type="submit" class="submit-button">
+    </div>
 
 
 </div>

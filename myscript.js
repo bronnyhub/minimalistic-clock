@@ -61,3 +61,13 @@ function changeBackground(){
   let color = document.getElementById('color_value').value;
   document.body.style.backgroundColor = color;
 }
+
+$('#fontPicker').click(function(){
+  $('#font-picker-menu').toggle();
+})
+
+
+function changeFont(){
+  font = document.getElementById('fonts').value;
+  document.body.style.font = font;
+}
