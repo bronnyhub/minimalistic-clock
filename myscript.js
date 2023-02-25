@@ -1,3 +1,5 @@
+// Full screen on function
+
 var elem = document.documentElement;
 function openFullscreen() {
   if(elem.requestFullscreen) {
@@ -12,8 +14,12 @@ function openFullscreen() {
   }
 }
 
+
+
+// Full screen off function
+
 document.addEventListener("keydown", function(event) {
-  const key = event.key; // Or const {key} = event; in ES6+
+  const key = event.key;
   if (key === "Escape") {
     document.getElementById("expand").style.opacity = "1";
     document.getElementById("side-nav").style.opacity = "1  ";
@@ -32,6 +38,9 @@ function closeFullscreen() {
 }
 
 
+
+// Clock function
+
 function startTime() {
   const today = new Date();
   let h = today.getHours();
@@ -44,14 +53,22 @@ function startTime() {
 } 
 
 function checkTime(i) {	
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) {i = "0" + i};
   return i;
 }
+
+
+
+// Sidebar Options
 
 $(".sidebar ul li").on('click' , function() {
   $(".sidebar ul li.active").removeClass('active');
   $(this).addClass('active');
 }) 
+
+
+
+// Background picker
 
 $('#backgroundPicker').click(function(){
   $('#background-picker-menu').toggle();
@@ -61,6 +78,10 @@ function changeBackground(){
   let color = document.getElementById('color_value').value;
   document.body.style.backgroundColor = color;
 }
+
+
+
+// Font picker
 
 $('#fontPicker').click(function(){
   $('#font-picker-menu').toggle();
