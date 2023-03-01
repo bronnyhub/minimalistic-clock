@@ -90,5 +90,13 @@ $('#fontPicker').click(function(){
 
 function changeFont(){
   font = document.getElementById('fonts').value;
-  document.body.style.font = font;
+  document.body.styler.font = font;
 }
+
+
+
+// Contact
+
+$('#contactMenu').click(function(){
+  $('#contact-menu').toggle();
+})

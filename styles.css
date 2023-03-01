@@ -122,6 +122,22 @@ li {
 }
 
 
+/* CONTACT */
+
+.contact {
+    margin: 30px;
+    display:none;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact a {
+    color:white;
+    text-transform:uppercase ;
+}
+
 
 
 
