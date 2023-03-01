@@ -80,11 +80,8 @@ li {
     display:none;
     background-color:transparent;
     align-items: center;
-    height:90px;
-    width:250px;
     justify-content:center;
-    border-radius: 10%;
-    margin:10px;
+    margin-top:-70px;
 }
 
 
@@ -108,24 +105,22 @@ li {
     display:none;
     height:50px;
     margin-top: 20px;
+    font-size: 20px;
 }
 
-.font-browser {
-    height: 50px;
-    width: 15%;
-    font-size: 25px;
+.font-picker-header {
+    color:white;
 }
 
 .submit-button {
-    height:50px;
-    font-size: 25px;
+    height:35px;
+    font-size: 20px;
 }
 
 
 /* CONTACT */
 
 .contact {
-    margin: 30px;
     display:none;
 }
 

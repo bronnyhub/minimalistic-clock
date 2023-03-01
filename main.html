@@ -45,28 +45,26 @@
 
 <!-- BACKGROUND COLOR PICKER -->
 
-    <div class="nonshower">
-    <div class="menu-picker" id="background-picker-menu">   
+<div class="menu-picker" id="background-picker-menu">   
         <input type="color" class="color-picker" id="color_value" name="color_value" value="Black">
         <button class="button-set-color" type="button" onclick="changeBackground()">
             <p class="color-button-text">Set color</p>
         </button>
-    </div>
-    </div>  
+</div>
 
 
 
 <!-- FONT PICKER -->
 
     <div class="font-picker" id="font-picker-menu">
-        <input list="browsers" name="browser" class="font-browser" id="font-browser">
-         <datalist id="fonts">
-             <option value="Times new roman">
-             <option value="Montserrat">
-             <option value="Oswald">
-             <option value="Indie flower">
-             <option value="Nanum Myeongjo">
-         </datalist>
+        <label for="fonts" class="font-picker-header">Choose a font:</label><br>
+        <select id="fonts">
+             <option value="Times new roman">Times new roman</option>
+             <option value="Montserrat">Montserrat</option>
+             <option value="Oswald">Oswald</option>
+             <option value="Indie flower">Indie flower</option>
+             <option value="Nanum Myeongjo">Nanum Myeongjo</option>
+        </select>
         <input type="submit" class="submit-button">
     </div>
 
